@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Service Login</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serifs;
+            background: url('https://source.unplash.com/1600x900/?spa, relaxation') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-cotainer {
+             background: rgba(255, 255, 255, 255, 0.9);
+             padding: 20px;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+             width: 320px;
+             text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #6a4c93;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #563d7c;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #6a4c93;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="login-container">
+      <h2>Login</h2>
+      <form action ="login.php" method="POST">
+           <input type="text" name="username" placeholder="Username" required>
+           <input type="password" name="password" placeholder="Password" required>
+           <button type="submit">Login</button>
+           <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+    </div>
+             
+    
+</body>
+</html>
